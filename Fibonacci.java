@@ -9,8 +9,10 @@ public class Fibonacci {
 		int secondFibNo =1;
 		int temp=firstFibNo;
 		for (i=0;i<=n;i++) {
-			System.out.println(temp);
-			
+			System.out.println(firstFibNo);
+			temp=firstFibNo+secondFibNo;
+			firstFibNo=secondFibNo;
+			secondFibNo=temp;
 		}
 	}
 
