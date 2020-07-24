@@ -9,7 +9,7 @@ public class Factorial {
 		int i=0;
 		int temp=1;
 		for(i=1;i<=number;i++) {
-			temp=temp*number;
+			temp=temp*i;
 		}
 		System.out.println("The factorial of number " +number + " is "+ temp);
 	}
