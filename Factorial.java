@@ -7,10 +7,11 @@ public class Factorial {
 		int number=sc.nextInt();
 		sc.close();
 		int i=0;
-		int temp=0;
-		for(i=0;i<number;i++) {
-			
+		int temp=1;
+		for(i=1;i<=number;i++) {
+			temp=temp*number;
 		}
+		
 	}
 
 }
