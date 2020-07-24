@@ -11,7 +11,7 @@ public class Factorial {
 		for(i=1;i<=number;i++) {
 			temp=temp*number;
 		}
-		
+		System.out.println("The factorial of number " +number + " is "+ temp);
 	}
 
 }
