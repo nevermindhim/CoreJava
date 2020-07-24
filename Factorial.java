@@ -6,7 +6,11 @@ public class Factorial {
 		System.out.println("Enter number \n");
 		int number=sc.nextInt();
 		sc.close();
-		
+		int i=0;
+		int temp=0;
+		for(i=0;i<number;i++) {
+			
+		}
 	}
 
 }
