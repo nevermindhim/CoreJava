@@ -5,6 +5,8 @@ public class LargestPalindrome {
 		LargestPalindrome LP=new LargestPalindrome();
 		System.out.println(""+LP.findLP("bananas"));
 	}
-
+	public String findLP(String s) {
+	
+	}
 
 }
