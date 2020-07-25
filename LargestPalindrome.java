@@ -8,6 +8,8 @@ public class LargestPalindrome {
 	public String findLP(String s) {
 		if(s.isEmpty())
 			return "Enter string";
+		if(s.length()==1)
+			return s;
 
 	}
 
