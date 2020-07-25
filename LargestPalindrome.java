@@ -1,9 +1,14 @@
 package com.test;
+import java.util.*;
 
 public class LargestPalindrome {
 	public static void main(String [] args) {
 		LargestPalindrome LP=new LargestPalindrome();
-		System.out.println(""+LP.findLP("bananas"));
+		System.out.println("Enter a string");
+		Scanner sc=new Scanner(System.in);
+		String stringToCheck= sc.nextLine();
+		sc.close();
+		System.out.println("The longest palindrome is "+LP.findLP(stringToCheck));
 	}
 	public String findLP(String s) {
 		if(s.isEmpty())
