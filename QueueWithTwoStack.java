@@ -28,14 +28,24 @@ public class QueueWithTwoStack {
 		}
 		if(q.s2.isEmpty()) {
 			while(!q.s1.isEmpty()) {
-				
+				x=pop(q.s1);
+				push(q.s2,x);						
 			}	
 		}
+		x=pop(q.s2);
 		return x;
 		
 	}
 	public static void main(String[] args) {
-		
+		Queue q=new Queue();
+		q.s1=new Stack<>();
+		q.s2=new Stack<>();
+		enQueue(q, 1);
+		enQueue(q, 2);
+		enQueue(q, 3);
+		System.out.println(deQueue(q));
+		enQueue(q, 4);		
+		System.out.println(deQueue(q));
 	}
 
 }
