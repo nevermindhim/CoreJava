@@ -14,18 +14,18 @@ public class LargestPalindrome {
 		int i=0;
 		longest=s.substring(0, 1);
 		for(i=0;i<s.length();i++) {
-			String tmp = checkForEquality(s, i, i);
+			String tmp = check(s, i, i);
 			if (tmp.length() > longest.length()) {
                 longest = tmp;
             }
-            tmp = checkForEquality(s, i, i + 1);
+            tmp = check(s, i, i + 1);
             if (tmp.length() > longest.length()) {
                 longest = tmp;
             }
         }
         return longest;
 	}
-	public String checkForEquality(String s, int begin, int end) {
+	public String check(String s, int begin, int end) {
         while (begin >= 0 && end <= s.length() - 1 && s.charAt(begin) == s.charAt(end)) {
             begin--;
             end++;
