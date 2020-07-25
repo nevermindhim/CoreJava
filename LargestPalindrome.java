@@ -6,7 +6,9 @@ public class LargestPalindrome {
 		System.out.println(""+LP.findLP("bananas"));
 	}
 	public String findLP(String s) {
-	
+		if(s.isEmpty())
+			return "Enter string";
+
 	}
 
 }
